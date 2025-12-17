@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Auto-delete checked tasks after (days)" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_days"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Theme"
+        android:layout_marginTop="12dp"/>
+
+    <RadioGroup
+        android:id="@+id/rg_theme"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Light" />
+
+        <RadioButton
+            android:id="@+id/rb_dark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dark" />
+
+    </RadioGroup>
+
+</LinearLayout>

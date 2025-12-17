@@ -1,0 +1,6 @@
+<resources>
+    <!-- unused (itt lehetne felülírni a default light themet -->
+    <style name="Base.Theme.TickTasks" parent="Theme.Material3.DayNight.NoActionBar">
+    </style>
+    <style name="Theme.TickTasks" parent="Base.Theme.TickTasks" />
+</resources>

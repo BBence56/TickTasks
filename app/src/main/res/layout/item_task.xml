@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    android:clickable="true"
+    android:foreground="?attr/selectableItemBackground">
+
+    <RelativeLayout
+        android:id="@+id/item_root"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@id/btn_delete"
+            android:layout_marginEnd="8dp" />
+
+        <ImageButton
+            android:id="@+id/btn_delete"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="false"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_delete"
+            android:layout_centerVertical="true"
+            android:contentDescription="@string/delete"
+            android:layout_toStartOf="@id/checkbox"
+            app:tint="?attr/colorOnSurface" />
+
+        <CheckBox
+            android:id="@+id/checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true" />
+
+        <!-- Divider line shown in selection mode: dotted for unselected, solid for selected -->
+        <View
+            android:id="@+id/divider"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="8dp"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+</com.google.android.material.card.MaterialCardView>
